@@ -22,11 +22,33 @@
 // jQuery tiene muchos metodos uno de los metodos es find, que te ayuda a buscar algo dentro de algo
 //$(".navegacion").find("a") === $(".navegacion a") 
 
-// Otro metodo .hide() ocultya un elelemto de nuestra pagina 
-
 //Selector 2#
 $(document).ready(function(){
     "use strict";
-    console.log("Hola desde jQuery")
+    
+    //=========== Metodos =================
+
+    // //Remove
+    // // Este metodo borra un elemento completamente del DOM
+    // $("main article:first").remove();
+
+    // //El metodo .hide() oculta un elelemto de nuestra pagina, en el DOM lo que ocurre es que optiene 
+    // // un display none;
+    // $("main article:first").hide();
+
+    //=========== Clorar un elemento =================
+
+    // Clone() Es el metodo que se utiliza para clonar un elemento
+    //Este metodo solo permite clonar una sola copia del elemento
+    var copia = $("main article:last").clone();
+    // append() Es un metodo que incorporara una copia al final de un elemento 
+    $("main").append(copia);
+
+    // prepend() es un metodo que incorporara una copia al principio de un elemento
+    $("main").prepend(copia);
+
+    // Existen dos metodos qu ehacen exactamente lo mismo solo que el orden en que se selecciona es al revez
+    //appendTo() Ejemplo: $(copia).appendTo("main"); === $("main").append(copia);
+     //prependTo() Ejemplo: $(copia).prependTo("main"); === $("main").prepend(copia);
 });
 
