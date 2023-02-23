@@ -142,14 +142,25 @@ $(document).ready(function () {
 // Este puede recibir dos parametros el 1ro es dentro de llaves, la propiedad y el valor que se van a actualizar
 // El segundo es un valor opcional que se coloca despues de las llaves y separado por una coma
 // representara la cantidad de tiempo que durara la animacion, donde 1000 === a 1s;
-    $("main article img").on("mouseenter", aumentarImagen);
-    $("main article img").on("mouseleave", disminuirImagen);
+    // $("main article img").on("mouseenter", aumentarImagen);
+    // $("main article img").on("mouseleave", disminuirImagen);
 
-    function aumentarImagen(){
-        $(this).animate({"width": "100%"});
-    }
+    // function aumentarImagen(){
+    //     $(this).animate({"width": "100%"});
+    // }
 
-    function disminuirImagen(){
-        $(this).animate({"width": "350px"});
-    }
+    // function disminuirImagen(){
+    //     $(this).animate({"width": "350px"});
+    // }
+
+    //Otros efectos tipo de animacion pueden ser con los metodos slideUp, slideDown
+    // Simplemente se selecciona el elemento que se desea animar, se utiliza el metodo que se quiera y 
+    // se le pasa como parametro el tiempo que durara la animacion
+
+    $(".logo img").click(function(){
+        $("main").slideUp(1000);
+    })
+    $(".sidebar").click(function(){
+        $("main").slideDown(1000);
+    })
 });
