@@ -134,4 +134,22 @@ $(document).ready(function () {
 //   $(".sidebar").css({"background-color" : "#e1e1e1",
 //                     "text-transform": "uppercase",
 //                     "padding": "10px"})
+
+// =========== Animaciones ==============
+// Con el metodo animate() podemos dar animaciones cualquier elemento 
+// En este caso estamos aplicando un animacion luego de un metodo on()
+// En la funcion que pasamos al .on() se realiza la animacion colocando el metodo .animate()
+// Este puede recibir dos parametros el 1ro es dentro de llaves, la propiedad y el valor que se van a actualizar
+// El segundo es un valor opcional que se coloca despues de las llaves y separado por una coma
+// representara la cantidad de tiempo que durara la animacion, donde 1000 === a 1s;
+    $("main article img").on("mouseenter", aumentarImagen);
+    $("main article img").on("mouseleave", disminuirImagen);
+
+    function aumentarImagen(){
+        $(this).animate({"width": "100%"});
+    }
+
+    function disminuirImagen(){
+        $(this).animate({"width": "350px"});
+    }
 });
