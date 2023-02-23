@@ -157,10 +157,39 @@ $(document).ready(function () {
     // Simplemente se selecciona el elemento que se desea animar, se utiliza el metodo que se quiera y 
     // se le pasa como parametro el tiempo que durara la animacion
 
-    $(".logo img").click(function(){
-        $("main").slideUp(1000);
-    })
-    $(".sidebar").click(function(){
-        $("main").slideDown(1000);
-    })
+    // $(".logo img").click(function(){
+    //     $("main").slideUp(1000);
+    // })
+    // $(".sidebar").click(function(){
+    //     $("main").slideDown(1000);
+    // })
+
+    // ========= Para recorrer un Array y un Objeto ==========
+    // Teniendo nuestra variable que sea un array
+    // utilizamos el metodo .each() para recorrer un array 
+    // este va a resivir el array que se recorrera, y la funcion que dictara lo que realizara
+    // en este caso es un afuncion anonima que cuenta con dos parametros i y v
+    // i representa el numero del index
+    // v representa el valor de cada index
+    // Luego con la combinacion de otros metodos se va creando lo que se quiere que realice cada funccion 
+
+    // var viajes = ["Paris", "Venezuela", "Argentina"];
+    // $.each(viajes, function(i, v){
+    //     console.log(viajes)
+    //     if (i == 0){
+    //         $(".sidebar").append("<h2>Posibles viajes: </h2>")
+    //     } 
+    //         $(".sidebar").append("<li>" + v + "</li>")
+        
+    // })
+
+    // var objetoViaje = {
+    //     vuelo1: "Madrid",
+    //     vuelo2: "Londres",
+    //     vuelo3: "Nederland"
+    // }
+
+    // $.each(objetoViaje, function(i , v){
+    //     $(".sidebar").append("<li>" + i + "-" + v + "</li>")
+    // })
 });
