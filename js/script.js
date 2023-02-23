@@ -78,6 +78,17 @@ $(document).ready(function(){
     //     console.log("Saliste del logo");
     // })
 
+    // Agregando clases con jQuery 
+    // Existe un metodo llamada addClass() este recibe como parametro el nombre de la clase de CSS que se desea agregar
+    //$("div.logo img").addClass("activo"); Si se coloca asi simpletemen agregarias una clase
 
+    // removeClass() se encarga de retirar una clase de CSS
+    // $("div.logo img").removeClass("activo"); Este retiraria una clase
+
+    $("#navegacion nav ul li a").on("click", function(e){
+        $("#navegacion nav ul li a").removeClass("activo"); // Con esto nos aseguramos que remueva la clase activo despuesd e que se selecciono otro enlace.
+        e.preventDefault(); // preventDefault() Es un metodo que nos ayuda a prevenir las caracteristicas predeterminadas que tenga cada elemento.
+        $(this).addClass("activo");
+    })
 });
 
