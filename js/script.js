@@ -109,5 +109,19 @@ $(document).ready(function(){
     // .next() nos llevara al siguiente elemento que venga en su misma cadena
     // Dato curioso es que se puede usar estos en varias veces consecutivas en un mismo selector
     // $("article:first").next().next(); nos estara mostrando en la ocnsola el 3er articulo de nuestro sitio web.
+
+    // ========= Modificando texto y HTML ==========
+    // Podemos modificar tanto el HTML en este caso cambiando un he por un h1 Y ademas su contenido
+    // $("main article:first h2").html("<h1>Hola mundo</h1>");
+    // Como modificar algun texto de un elemento como el primer parrafo de este primer articulo
+    // $("main article:first p:first").text("Mi nombre es juan caceres")
+
+    // Para modificar atributos existe un metodo de jQuery que se conoce como attr()
+    // este metodo recibe dos paremetros primero señalando el atributo que se quiere seleccionar 
+    // y el segundo seguido de una coma el nuevo valor que tendra 
+    // Si solo se coloca el primer atributo, el resultado en consola mostrara el valor que tiene 
+    //  $("#navegacion nav ul li a:first").attr("href", "https://juancaceres963.github.io/Portafolio2023/");
+    //  // Se puede añadir atributos si un elemento no tiene de esta forma, solo añadiendo el atributo nuevo a la primera prosicion y luego dandole el valor
+    //  $("#navegacion nav ul li a:first").attr("target", "_blank")
 });
 
