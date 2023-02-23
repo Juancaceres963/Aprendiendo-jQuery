@@ -102,5 +102,12 @@ $(document).ready(function(){
     //         $(this).removeClass("activo fondorojo")
     //     }
     // })
+
+    // ============ Navegando atravez del DOM ==========
+    // .parent() Nos llevara al padre de un elemento
+    // .childrem() nos llevara a el/los hijos de un elemento
+    // .next() nos llevara al siguiente elemento que venga en su misma cadena
+    // Dato curioso es que se puede usar estos en varias veces consecutivas en un mismo selector
+    // $("article:first").next().next(); nos estara mostrando en la ocnsola el 3er articulo de nuestro sitio web.
 });
 
