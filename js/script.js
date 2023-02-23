@@ -85,10 +85,22 @@ $(document).ready(function(){
     // removeClass() se encarga de retirar una clase de CSS
     // $("div.logo img").removeClass("activo"); Este retiraria una clase
 
-    $("#navegacion nav ul li a").on("click", function(e){
-        $("#navegacion nav ul li a").removeClass("activo"); // Con esto nos aseguramos que remueva la clase activo despuesd e que se selecciono otro enlace.
-        e.preventDefault(); // preventDefault() Es un metodo que nos ayuda a prevenir las caracteristicas predeterminadas que tenga cada elemento.
-        $(this).addClass("activo");
-    })
+    // $("#navegacion nav ul li a").on("click", function(e){
+    //     $("#navegacion nav ul li a").removeClass("activo"); // Con esto nos aseguramos que remueva la clase activo despuesd e que se selecciono otro enlace.
+    //     e.preventDefault(); // preventDefault() Es un metodo que nos ayuda a prevenir las caracteristicas predeterminadas que tenga cada elemento.
+    //     $(this).addClass("activo");
+    // })
+
+    // Selectores mas complejos para eventos estructurados
+    // Utilizando esta sintaxsis tipo objeto sobre el on, se puede estructurar varios eventos diferentes al mismo tiempo sobre le mismo selector
+    // $("main").on({
+    //     click: function(){
+    //         $(this).addClass("activo")
+    //     }, mouseenter: function(){
+    //         $(this).addClass("fondorojo");
+    //     }, mouseleave: function(){
+    //         $(this).removeClass("activo fondorojo")
+    //     }
+    // })
 });
 
