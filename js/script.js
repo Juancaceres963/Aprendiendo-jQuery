@@ -26,6 +26,17 @@
 $(document).ready(function () {
   "use strict";
 
+  $(".servicios nav a").on("click", mostrarEnlaces);
+
+  function mostrarEnlaces(){
+    $(".servicios nav a").removeClass("activo");
+    $(this).addClass("activo");
+    var enlace = $(this).attr("href");
+    $(".nuestros-servicios div").fadeOut();
+    $(enlace).fadeIn();
+
+    return false;
+  }
   //=========== Metodos =================
 
   // //Remove

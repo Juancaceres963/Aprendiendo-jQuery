@@ -15,7 +15,7 @@ header {
   padding: 20px 0;
 }
 .activo {
-    border: 5px solid yellow;
+    background-color: #db008d;
 }
 div.contenedor {
   width: 1200px;
@@ -100,9 +100,10 @@ div.nuestros-servicios > div {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #e1e1e1;
+  background-color: #db008d;
   padding: 20px;
   display: none;
+  color: #ffffff;
 }
 /** Entradas de post**/
 article {
